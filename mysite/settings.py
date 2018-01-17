@@ -121,7 +121,7 @@ USE_TZ = False
 STATIC_URL = '/static/'
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+#DATABASES['default'] = dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -136,6 +136,12 @@ try:
 except ImportError:
     pass
 
+MIDDLEWARE_CLASSES = (
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+)
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

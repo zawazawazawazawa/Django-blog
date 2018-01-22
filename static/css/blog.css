@@ -1,5 +1,5 @@
 h1 a {
-    color: blue;
+    color: orange;
     font-family: 'VT323';
 }
 
@@ -8,7 +8,7 @@ body {
 }
 
 .page-header{
-  background-color: #ff9400;
+  background-color: blue;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
 }

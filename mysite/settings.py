@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,7 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+LOGIN_URL = 'accounts/login/'
+LOGOUT_URL = 'accounts/logout'
+LOGIN_REDIRECT_URL = '/'

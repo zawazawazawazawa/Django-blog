@@ -8,7 +8,7 @@ body {
 }
 
 .page-header{
-  background-color: blue;
+  background-color: skyblue;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
 }
@@ -55,4 +55,13 @@ h1, h2, h3, h4 {
 }
 .post h1{
     font-family: 'Lobster';
+}
+
+.user {
+  text-align: right;
+  color: white
+}
+
+.page-header p{
+  color: blue;
 }

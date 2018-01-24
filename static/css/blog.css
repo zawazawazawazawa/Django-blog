@@ -14,8 +14,8 @@ body {
 }
 
 .user {
-  text-align: right;
-  color: white
+  float: right;
+  color: orange;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited,  .page-header h1 a:active {

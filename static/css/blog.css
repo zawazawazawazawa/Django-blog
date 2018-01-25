@@ -1,10 +1,6 @@
-h1 a {
-    color: orange;
-    font-family: 'VT323';
-}
-
-body {
+html {
     padding-left: 15px;
+    font-size: 50px;
 }
 
 .page-header{
@@ -18,9 +14,7 @@ body {
   color: orange;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited,  .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+.page-header{
     text_decoration: none;
 }
 
@@ -29,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-farmily:'Lobster', cursive;
+    font-farmily:'VT323', cursive;
 }
 
 .date {

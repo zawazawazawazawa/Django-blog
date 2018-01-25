@@ -1,12 +1,18 @@
-html {
+body {
     padding-left: 15px;
     font-size: 50px;
+    color: white;
 }
 
 .page-header{
   background-color: skyblue;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
+  font-family: :'VT323';
+}
+
+.page-header p{
+  color: blue;
 }
 
 .user {
@@ -20,10 +26,11 @@ html {
 
 .content{
     margin-left: 40px;
+    color: black;
 }
 
 h1, h2, h3, h4 {
-    font-farmily:'VT323', cursive;
+    font-farmily:'Lobster', cursive;
 }
 
 .date {
@@ -53,13 +60,4 @@ h1, h2, h3, h4 {
 }
 .post h1{
     font-family: 'Lobster';
-}
-
-div a.user {
-  text-align: right;
-  color: white
-}
-
-.page-header p{
-  color: blue;
 }

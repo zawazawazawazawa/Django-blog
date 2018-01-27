@@ -1,4 +1,6 @@
 .page-header {
+  padding-top: 30%;
   background-image: url(header.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
 }

@@ -1,4 +1,5 @@
 .page-header {
-  background: url(static/image/header.jpg)
+  {% load static %}
+  background: {% static "header.jpg %"}
   background-size: page-header
 }

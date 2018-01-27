@@ -14,12 +14,11 @@
       <div class="page-header">
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
-        <h1 class="text-center"><a href="/" class="display-3 font-weight-bold text-primary pb-3">Shin Ayu Blog</a></h1>
-        <p>おれが練習でつくりました</p>
-        <a href="accounts/login" class="text-right mx-3">ログイン</a>
+        <h1 class="text-center"><a href="/" class="display-3 font-weight-bold  pb-3">Shin Ayu Blog</a></h1>
       </div>
     </header>
-
+    <p>おれが練習でつくりました</p>
+    <a href="accounts/login" class="text-right mx-3">ログイン</a>
     <div class="container-fluid">
       {% block content %}
       {% endblock%}

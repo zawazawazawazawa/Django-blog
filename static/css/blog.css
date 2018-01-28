@@ -5,6 +5,10 @@ html{
 h1 {
   font-size: 8vw;
 }
+
+.container{
+  max-width: 100%;
+}
 .page-header {
   padding: 20%;
   background-image: url(header.jpg);

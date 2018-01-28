@@ -8,6 +8,7 @@ h1 {
 
 h1.text-center {
   font-family: 'Pacifico', cursive;
+  white-space: nowrap;
 }
 
 .page-header {

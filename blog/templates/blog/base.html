@@ -13,17 +13,28 @@
   <body>
     <header>
       <div class="page-header">
-        <div class="container p-0">
+        <div class="container">
           <h1 class="text-center"><a href="/" class="font-weight-bold text-warning">Shin Ayu Blog</a></h1>
         </div>
       </div>
     </header>
 
-    <a href="{% url 'post_new' %}" class="top-menu btn btn-info"></a>
-    <a href="{% url 'post_draft_list' %}" class="top-menu btn btn-info"><span class="glyphicon glyphicon-edit"></span></a>
-    <p>おれが練習でつくりました</p>
-    <a class="text-right mx-3" href="accounts/login">ログイン</a>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <p>おれが練習でつくりました</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="text-right mx-3" href="accounts/login">ログイン</a>
+        </div>
+        <div class="col-xs-2">
+          <a href="{% url 'post_new' %}" class="top-menu btn btn-info">作成</a>
+        </div>
+        <div class="col-xs-2">
+          <a href="{% url 'post_draft_list' %}" class="top-menu btn btn-info">投稿</a>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid">
       {% block content %}
       {% endblock%}

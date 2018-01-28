@@ -3,7 +3,11 @@ html{
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 10vw;
+}
+
+h1.text-center {
+  font-family: 'Pacifico', cursive;
 }
 
 .page-header {

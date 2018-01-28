@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <title>Shin Ayu blog</title>
     </style>
   </head>
@@ -18,10 +19,11 @@
       </div>
     </header>
 
-    <a href="{% url 'post_new' %}" class="top-menu"><button class="btn btn-info"><i class="glyphicon glyphicon-plus"></i></button></a>
-    <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu btn btn-info"></a>
+    <a href="{% url 'post_draft_list' %}" class="top-menu btn btn-info"><span class="glyphicon glyphicon-edit"></span></a>
     <p>おれが練習でつくりました</p>
     <a class="text-right mx-3" href="accounts/login">ログイン</a>
+
     <div class="container-fluid">
       {% block content %}
       {% endblock%}

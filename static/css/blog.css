@@ -1,7 +1,10 @@
 html{
-    font-size: 100%;
+  font-size: 100%;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
 .page-header {
   padding: 20%;
   background-image: url(header.jpg);

@@ -9,7 +9,7 @@
       <h3><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
       {{post.text|linebreaks}}
       {% if post.data %}
-        <img src="{{post.data.url}}">
+        <img src="{{post.data.url}}" style="width: 100%; height: auto; max-width: 320px;"/>
       {% endif %}
     </div>
   {% endfor %}

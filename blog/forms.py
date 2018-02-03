@@ -1,9 +1,11 @@
 from django import forms
 from .models import Post
+import cloudinary
+from cloudinary.models import CloudinaryField
 
 class PostForm(forms.ModelForm):
 
-    data = forms.ImageField(label = 'Selec a file')
+    data = cloudinary.models.CloudinaryField(label = 'Selec a file')
 
     class Meta:
         model = Post

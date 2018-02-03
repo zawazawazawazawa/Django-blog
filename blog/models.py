@@ -9,7 +9,7 @@ class Post(models.Model):
     title = models.CharField(max_length = 200)
     text = models.TextField()
     file_name = models.CharField(max_length = 50)
-    data = cloudinary.models.CloudinaryField(upload_to = 'images', null = True)
+    data = cloudinary.models.CloudinaryField('images', null = True)
     created_date = models.DateTimeField(default = timezone.now)
     published_date = models.DateTimeField(blank = True, null = True)
 

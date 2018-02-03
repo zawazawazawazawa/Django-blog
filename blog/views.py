@@ -4,6 +4,11 @@ from .models import Post
 from .forms import PostForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.template.context_processors import csrf
+from django.conf import settings
+from blog.models import Post
+import sys, os
+UPLOADE_DIR = os.path.dirname(os.path.abspath(__file__)) + '/static/files/'
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -15,7 +20,7 @@ def post_detail(request, pk):
 
 def post_new(request):
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user

@@ -140,3 +140,12 @@ except ImportError:
 LOGIN_URL = 'accounts/login/'
 LOGOUT_URL = 'accounts/logout'
 LOGIN_REDIRECT_URL = '/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+CLOUDINARY = {
+'cloud_name':'htwyncycz',
+'api_key':'272819656787687',
+'api_secret':'4ZuBRBqkm85uqRgp7oDMjJxyGEE'
+}

@@ -14,6 +14,7 @@
     </div>
     <h1>{{ post.title }}</h1>
     {{ post.text|linebreaks }}
+    <br>
     {% if post.data %}
       <img src="{{post.data.url}}"/>
     {% endif %}

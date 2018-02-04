@@ -17,4 +17,14 @@
     {% if post.data %}
       <img src="{{post.data.url}}"/>
     {% endif %}
+
+    <h4>コメント</h4>
+    <a href="{% url 'comment' pk=post.pk %}">コメントする</a>
+    <hr>
+    {% for comment in comments %}
+      <div style="margin-left:100px;">
+        名前：{{ comment.name }}<br>
+        コメント：{{ comment.text }}<br>
+      </div>
+    {% endfor %}
 {% endblock %}

@@ -20,8 +20,22 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-"""
-class FileNameModel(models.Model):
-    file_name = models.CharField(max_length = 50)
-    upload_time = models.DateTimeField(default = datetime.now)
-"""
+class Comment(models.Model):
+    name = models.CharField(max_length=255, blank=True)
+    text = models.TextField()
+    published_date = models.DateTimeField(blank = True, null = True)
+
+    def __str__(self):
+        return self.name
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+class ReComment(models.Model):
+    name = models.CharField(max_length=255, blank=True)
+    text = models.TextField()
+    target = models.ForeignKey(Post, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name

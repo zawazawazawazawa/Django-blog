@@ -1,3 +1,37 @@
+body {
+  background-color: white;
+}
+
+article.main{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  background-color: blue;
+  padding:10px 50px;
+}
+
+div.middle{
+  width: 100%;
+}
+
+article.contents{
+  float: left;
+  width: 100%;
+  background-color: white;
+  padding: 10px 50px;
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  background-color: orange;
+}
+
 img {
   width: 100%;
   height: auto;

@@ -7,10 +7,10 @@
               {{ post.published_date }}
         </div>
       {% else %}
-        <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+        <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}"><i class="fas fa-check"></i> Publish</a>
       {% endif %}
-        <a href="{% url 'post_edit' pk=post.pk %}"><i class="fas fa-edit"></i> 編集</a>
-        <a href="{% url 'post_remove' pk=post.pk %}"><i class="fas fa-trash-alt"></i> 削除</a>
+        <a href="{% url 'post_edit' pk=post.pk %}"><i class="fas fa-edit"></i> Edit</a>
+        <a href="{% url 'post_remove' pk=post.pk %}"><i class="fas fa-trash-alt"></i> Delete</a>
     </div>
     <h1>{{ post.title }}</h1>
     {{ post.text|linebreaks }}
